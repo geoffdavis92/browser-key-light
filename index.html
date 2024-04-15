@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Browser Key Light</title>
+  <style>
+    :root {
+      --key-light-color: #fff;
+      --beige: beige;
+      --white-warm: #fffaf0;
+      --white-cool: #f6fdff;
+      --sunset: #fbeacc;
+      --snow-day: #e0efff;
+    }
+
+    body {
+      background-color: var(--key-light-color);
+    }
+
+    body:fullscreen::backdrop {
+      background: var(--key-light-color);
+    }
+
+    .controls {
+      opacity: 0.3;
+      padding: 1rem;
+      transition: 0.3s opacity ease-in-out;
+    }
+
+    .controls:hover {
+      opacity: 1;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="controls">
+    <select name="theme-select" id="theme-select">
+      <option value="white" selected>White (neutral)</option>
+      <option value="white-warm">White (warm)</option>
+      <option value="white-cool">White (cool)</option>
+      <option value="beige">Beige</option>
+      <option value="sunset">Sunset</option>
+      <option value="snow-day">Snow Day</option>
+    </select>
+    <button id="full-screen-toggle">Enter Full Screen</button>
+  </div>
   <script src="./index.js"></script>
 </body>
+
 </html>
