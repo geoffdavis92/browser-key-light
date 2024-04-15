@@ -1,0 +1,7 @@
+:root {
+  --key-light-color: #fff;
+}
+
+body {
+  background-color: var(--key-light-color);
+}

@@ -1,0 +1,27 @@
+{
+  "name": "browser-key-light",
+  "version": "0.0.0",
+  "description": "A site to turn your browser into a key light",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geoffdavis92/browser-key-light.git"
+  },
+  "keywords": [
+    "browser",
+    "key",
+    "light"
+  ],
+  "author": "Geoff Davis <geoffdavis92@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geoffdavis92/browser-key-light/issues"
+  },
+  "homepage": "https://github.com/geoffdavis92/browser-key-light#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
